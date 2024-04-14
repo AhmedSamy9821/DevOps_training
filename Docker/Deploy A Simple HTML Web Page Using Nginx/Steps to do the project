@@ -1,0 +1,6 @@
+Create html file with name (index.html) on directory (website) 
+Run container with this specefications
+  image : nginx 
+  bind mount >> container directory :/usr/share/nginx/html >>  host directory : website
+  port expose  8080:80
+Open the browser and write "localhost:8080"
