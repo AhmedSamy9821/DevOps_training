@@ -1,0 +1,8 @@
+Download the project [git clone https://github.com/MenaMagdyHalem/Course-Docker.git]
+Create Dockerfile
+Build image from docker file [docker build -t website_basic_image .]
+Run the container [docker run -itd --name website -p 8080:80 website_basic_image 
+write "localhost:8080" on the browser
+commit the container [docker commit website website_image]
+tag the image to be able to push it to docker hub [docker tag website_image:latest ahmedsamy98/school_website:latest]
+push the image to docker hub [docker push ahmedsamy98/school_website:latest]
