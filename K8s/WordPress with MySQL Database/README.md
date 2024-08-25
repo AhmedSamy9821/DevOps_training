@@ -1,5 +1,9 @@
 # Kubernetes Project: WordPress with MySQL Database
 This project deploys a WordPress application on Kubernetes, utilizing MySQL as the database backend. It is structured into two tiers: MySQL and WordPress, each configured with appropriate storage solutions and service types for accessibility.
+## *Architecture*
+
+![Architecture](Arceticture.png)
+
 ## MySQL Tier
 ### Overview
 The MySQL tier manages the database backend for the WordPress application. It employs AWS EBS for persistent storage and ensures secure access using secrets for sensitive credentials.
@@ -43,5 +47,4 @@ The WordPress tier hosts the WordPress application pods, leveraging AWS EFS for 
 After deploying the services, set up an AWS load balancer:
 - Configure AWS load balancer to include worker nodes with service node ports in the target group.
 - Attach the target group to the AWS load balancer to enable external access to the WordPress application.
-  ##
-This README structure provides a clear overview of your Kubernetes project, detailing each tier's setup, configuration steps, and implementation specifics. Adjust the YAML file names and steps as per your actual implementation and deployment process.
+ 
