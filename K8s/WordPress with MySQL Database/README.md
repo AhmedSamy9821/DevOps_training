@@ -2,7 +2,7 @@
 This project deploys a WordPress application on Kubernetes, utilizing MySQL as the database backend. It is structured into two tiers: MySQL and WordPress, each configured with appropriate storage solutions and service types for accessibility.
 ## *Architecture*
 
-![Architecture](Arceticture.png)
+![Architecture](Architecture.png)
 
 ## MySQL Tier
 ### Overview
